@@ -70,10 +70,10 @@ public class CYAnimatorView extends RelativeLayout {
 
         if (mMove > CYStickyNavLayouts.maxWidth / 2) {
             animator_text.setText("释放查看更多");
-            animator_arrow.setImageResource(R.drawable.tactics_more_left);
+            animator_arrow.setImageResource(R.drawable.tactics_more_right);
         } else {
             animator_text.setText("滑动查看更多");
-            animator_arrow.setImageResource(R.drawable.tactics_more_right);
+            animator_arrow.setImageResource(R.drawable.tactics_more_left);
         }
         requestLayout();
     }
