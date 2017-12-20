@@ -10,7 +10,7 @@ import com.android.cy.pullrecyclerview.adapter.HomeAdapters;
 import com.android.cy.pullrecyclerview.view.CYStickyNavLayouts;
 
 
-public class HomeActivitys extends FragmentActivity {
+public class HomeActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class HomeActivitys extends FragmentActivity {
         layout.setOnStartActivity(new CYStickyNavLayouts.OnStartActivityListener() {
             @Override
             public void onStart() {
-                Intent intent = new Intent(HomeActivitys.this, MainActivity.class);
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
