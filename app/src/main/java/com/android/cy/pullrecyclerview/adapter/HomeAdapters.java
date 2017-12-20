@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import com.android.cy.pullrecyclerview.R;
 
 
-public class HomeAdapters extends RecyclerView.Adapter<HomeAdapters.ViewHolder>{
+public class HomeAdapters extends RecyclerView.Adapter<HomeAdapters.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
