@@ -15,7 +15,7 @@ public class HomeActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homes);
+        setContentView(R.layout.activity_home);
 
         CYStickyNavLayouts layout = (CYStickyNavLayouts) findViewById(R.id.head_home_layout);
         layout.setOnStartActivity(new CYStickyNavLayouts.OnStartActivityListener() {
