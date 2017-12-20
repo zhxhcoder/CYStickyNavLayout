@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.android.cy.pullrecyclerview.R;
 
-public class AnimatorView extends RelativeLayout {
+public class CYAnimatorView extends RelativeLayout {
 
     private View mView;
     private LinearLayout mLayout;
@@ -27,7 +27,7 @@ public class AnimatorView extends RelativeLayout {
     private int mLayoutHeight;
     private int mLayoutWidth;
 
-    public AnimatorView(Context context) {
+    public CYAnimatorView(Context context) {
         super(context);
         mPath = new Path();
         mBackPaint = new Paint();
@@ -42,11 +42,11 @@ public class AnimatorView extends RelativeLayout {
         addView(mView);
     }
 
-    public AnimatorView(Context context, @Nullable AttributeSet attrs) {
+    public CYAnimatorView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public AnimatorView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public CYAnimatorView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

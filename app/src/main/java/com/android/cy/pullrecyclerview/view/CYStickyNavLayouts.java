@@ -21,7 +21,7 @@ public class CYStickyNavLayouts extends LinearLayout implements NestedScrollingP
 
     private NestedScrollingParentHelper mParentHelper;
     private View mHeaderView;
-    private AnimatorView mFooterView;
+    private CYAnimatorView mFooterView;
     private RecyclerView mChildView;
     // 解决多点触控问题
     private boolean isRunAnim;
@@ -42,7 +42,7 @@ public class CYStickyNavLayouts extends LinearLayout implements NestedScrollingP
         super(context, attrs);
         mHeaderView = new View(context);
         mHeaderView.setBackgroundColor(0xffFFFFFF);
-        mFooterView = new AnimatorView(context);
+        mFooterView = new CYAnimatorView(context);
         mFooterView.setBackgroundColor(0xffFFFFFF);
         maxWidth = dp2Px(context, 120);
         mParentHelper = new NestedScrollingParentHelper(this);
