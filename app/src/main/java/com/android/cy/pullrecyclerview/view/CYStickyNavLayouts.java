@@ -32,10 +32,10 @@ public class CYStickyNavLayouts extends LinearLayout implements NestedScrollingP
         void onStart();
     }
 
-    private OnStartActivityListener mLinster;
+    private OnStartActivityListener mlistener;
 
     public void setOnStartActivity(OnStartActivityListener l) {
-        mLinster = l;
+        mlistener = l;
     }
 
     public CYStickyNavLayouts(Context context, AttributeSet attrs) {
@@ -110,8 +110,8 @@ public class CYStickyNavLayouts extends LinearLayout implements NestedScrollingP
             startAnimation(new ProgressAnimation());
         }
 
-        if (getScrollX() > maxWidth + maxWidth / 2 && mLinster != null) {
-            mLinster.onStart();
+        if (getScrollX() > maxWidth + maxWidth / 2 && mlistener != null) {
+            mlistener.onStart();
         }
     }
 
