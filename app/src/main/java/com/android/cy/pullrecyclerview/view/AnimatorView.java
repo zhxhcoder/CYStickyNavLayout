@@ -18,8 +18,8 @@ public class AnimatorView extends RelativeLayout {
 
     private View mView;
     private LinearLayout mLayout;
-    private TextView mTextView;
-    private ImageView iv_arrow;
+    private TextView animator_text;
+    private ImageView animator_arrow;
     private int mMove;
     private Path mPath;
     private Paint mBackPaint;
@@ -37,8 +37,8 @@ public class AnimatorView extends RelativeLayout {
 
         mView = View.inflate(context, R.layout.animator_footer, null);
         mLayout = (LinearLayout) mView.findViewById(R.id.animator_ll);
-        mTextView = (TextView) mView.findViewById(R.id.animator_text);
-        iv_arrow = (ImageView) mView.findViewById(R.id.iv_arrow);
+        animator_text = (TextView) mView.findViewById(R.id.animator_text);
+        animator_arrow = (ImageView) mView.findViewById(R.id.animator_arrow);
         addView(mView);
     }
 
@@ -69,11 +69,11 @@ public class AnimatorView extends RelativeLayout {
         mView.getLayoutParams().height = LinearLayout.LayoutParams.MATCH_PARENT;
 
         if (mMove > CYStickyNavLayouts.maxWidth / 2) {
-            mTextView.setText("释放查看");
-            iv_arrow.setImageResource(R.drawable.tactics_more_left);
+            animator_text.setText("释放查看更多");
+            animator_arrow.setImageResource(R.drawable.tactics_more_left);
         } else {
-            mTextView.setText("查看更多");
-            iv_arrow.setImageResource(R.drawable.tactics_more_right);
+            animator_text.setText("滑动查看更多");
+            animator_arrow.setImageResource(R.drawable.tactics_more_right);
         }
         requestLayout();
     }
