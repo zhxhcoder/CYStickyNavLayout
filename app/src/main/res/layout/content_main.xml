@@ -8,4 +8,25 @@
     tools:context="com.android.cy.pullrecyclerview.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.cy.pullrecyclerview.view.ScrollingImageView
+            android:id="@+id/scrolling_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:speed="1dp"
+            app:src="@drawable/scrolling_bg" />
+
+        <com.android.cy.pullrecyclerview.view.ScrollingImageView
+            android:id="@+id/scrolling_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:speed="2.5dp"
+            app:src="@drawable/scrolling_fg" />
+    </FrameLayout>
+
+
+
 </android.support.constraint.ConstraintLayout>

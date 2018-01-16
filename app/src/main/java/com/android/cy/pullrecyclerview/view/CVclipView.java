@@ -35,7 +35,7 @@ public class CVclipView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int w = MeasureSpec.getSize(widthMeasureSpec);
-        setMeasuredDimension(w, w * 2);
+        setMeasuredDimension(w, w * 3);
     }
 
     @Override
