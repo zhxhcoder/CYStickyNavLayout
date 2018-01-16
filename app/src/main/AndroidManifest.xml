@@ -67,6 +67,9 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TestClipMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
