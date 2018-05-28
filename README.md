@@ -8,4 +8,7 @@
 动态效果图：
 
 
+![](https://github.com/zhxhcoder/CYStickyNavLayout/blob/master/screenshots/CYStickyNavLayout.gif)
+
+
 
