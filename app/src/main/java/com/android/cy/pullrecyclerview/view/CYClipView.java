@@ -13,11 +13,11 @@ import android.view.View;
  * Created by zhxh on 2018/1/16.
  */
 
-public class CVclipView extends View {
+public class CYClipView extends View {
 
     Rect clip = new Rect();
 
-    public CVclipView(Context context) {
+    public CYClipView(Context context) {
         super(context);
         int[] colors = {0xff000000, 0xffff0000, 0xffffffff};
         Drawable d = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, colors);

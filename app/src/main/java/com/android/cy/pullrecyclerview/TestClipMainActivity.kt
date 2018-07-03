@@ -4,7 +4,7 @@ import android.app.Activity
 import android.os.Bundle
 import android.widget.ScrollView
 
-import com.android.cy.pullrecyclerview.view.CVclipView
+import com.android.cy.pullrecyclerview.view.CYClipView
 
 
 /**
@@ -17,7 +17,7 @@ class TestClipMainActivity : Activity() {
         super.onCreate(savedInstanceState)
 
         val sv = ScrollView(this)
-        val v = CVclipView(this)
+        val v = CYClipView(this)
         sv.addView(v)
         setContentView(sv)
     }
