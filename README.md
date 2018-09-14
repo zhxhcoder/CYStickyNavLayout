@@ -12,3 +12,33 @@
 
 
 
+# 最新状况
+现已加入XComponent豪华套餐
+
+https://github.com/zhxhcoder/XComponent
+
+使用方法
+
+implementation 'com.zhxh:xcomponentlib:2.8'
+
+
+        <com.zhxh.xcomponentlib.xstickyhorizon.XStickyNavContainer
+            android:id="@+id/xStickynavlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/xRecyclerview"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+        </com.zhxh.xcomponentlib.xstickyhorizon.XStickyNavContainer>
+
+
+
