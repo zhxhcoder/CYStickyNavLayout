@@ -17,9 +17,9 @@
 
 https://github.com/zhxhcoder/XComponent
 
-使用方法
+#### 使用方法
 
-implementation 'com.zhxh:xcomponentlib:2.8'
+引用   implementation 'com.zhxh:xcomponentlib:2.8'
 
 
         <com.zhxh.xcomponentlib.xstickyhorizon.XStickyNavContainer
@@ -39,6 +39,10 @@ implementation 'com.zhxh:xcomponentlib:2.8'
                 android:scrollbars="none" />
 
         </com.zhxh.xcomponentlib.xstickyhorizon.XStickyNavContainer>
+        
+        
+      xStickynavlayout.setOnStartActivity(() -> RequestManager.toQuantTacticsReverse(strategyId, pageTitle));
+
 
 
 
